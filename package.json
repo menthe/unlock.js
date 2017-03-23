@@ -1,0 +1,25 @@
+{
+  "name": "unlock.js",
+  "version": "1.0.0",
+  "description": "Slide to unlock js plugin",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/menthe/unlock.js.git"
+  },
+  "keywords": [
+    "sllide",
+    "unlock",
+    "js"
+  ],
+  "author": "harris",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "less": "^2.7.2"
+  }
+}

@@ -1,0 +1,36 @@
+.common {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+.slide-to-unlock-bg {
+  text-align: center;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+.slide-to-unlock-bg span {
+  position: relative;
+  z-index: 5;
+  color: #333;
+}
+.slide-to-unlock-progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+  left: 1px;
+  top: 1px;
+}
+.slide-to-unlock-handle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  z-index: 6;
+  cursor: move;
+}
