@@ -1,46 +1,22 @@
 <!DOCTYPE html>
-<html>
-
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title></title>
-<link href="http://statics.1024tools.com/css/markdown/github.css" rel="stylesheet" />
+<title>unlock.js - jQuery 滑动解锁插件</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="../assets/less/unlock.css">
 <style type="text/css" media="screen">
-html {
-	font-family: Microsoft YaHei, Tahoma, Helvetica, Arial, "\5b8b\4f53",
-		sans-serif;
-	font-size: 14px;
-}
-
-.wrapper {
-	/*background-color: #f7f7f7;*/
-	padding: 1rem 10%;
-	margin: 2rem auto;
-	min-width: 300px;
-	max-width: 1200px;
-	width: 70%;
-}
-
 .bar {
 	margin: 50px;
+	margin-left:0px;
 	height: 40px;
 	width: 300px;
 }
-
-table {
-	font-size: 0.8rem;
-}
-
-tr, td {
-	line-height: 2rem;
-}
 </style>
-<link rel="stylesheet" type="text/css" href="../assets/less/unlock.css">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="container">
 		<h1>jQuery 滑动解锁插件</h1>
 		<h2>功能</h2>
 		<ul>
@@ -51,31 +27,22 @@ tr, td {
 		<h2>使用方法</h2>
 		<ol>
 			<li>引入插件文件</li>
-			<pre>
-			<code>
-				<link rel="stylesheet" type="text/css" href="jquery.slide_to_unlock.css"> 
-			</code>
-			</pre>
-			<pre>
-				<code class="lang-javascript">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;jquery.slide_to_unlock.css&quot;&gt; 
-&lt;script src=&#39;jquery.slide_to_unlock.js&#39;&gt;&lt;/script&gt;
-</code>
-			</pre>
-			<li>创建一个div,作为容器,比如:<pre>
-					<code>&lt;div id = &#39;foo&#39;&gt;  
-&lt;/div&gt;
-</code>
-				</pre></li>
+				<code>
+					&lt;script src='unlock.js'&gt;&lt;/script&gt;
+					<br />
+					&lt;link rel="stylesheet" type="text/css" href="unlock.css"&gt;
+				</code>
+			<li>创建一个div,作为容器,比如</li>
+				<code>&lt;div id = &#39;foo&#39;&gt;&lt;/div&gt;</code>
 			<li>在脚本中初始化</li>
-			<pre>
-				<code>var $container = $(&#39;#foo&#39;);
-$container.slideToUnlock(options);
-</code>
-			</pre>
+				<code>
+					var $container = $(&#39;#foo&#39;);<br />
+					$container.slideToUnlock(options);
+				</code>
 		</ol>
 		<p>其中options为可选参数,有默认值 options参数列表</p>
 		<h2>参数列表</h2>
-		<table>
+		<table class="table table-bordered table-hovered">
 			<thead>
 				<tr>
 					<th>name</th>
@@ -170,5 +137,4 @@ $container.slideToUnlock(options);
 		});
 	</script>
 </body>
-
 </html>
